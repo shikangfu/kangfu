@@ -1,0 +1,189 @@
+/* header center*/
+.textcenter {
+    text-align: center;
+
+}
+
+/* haeder style*/
+header.head {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: solid;
+}
+
+/*english letter*/
+p.letter {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 25px 10px;
+    font-style: normal;
+}
+
+/* chinese */
+p.chart {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0px 5px;
+    font-style: normal;
+}
+
+/* fbi warning */
+h1.fbi {
+    margin: 10px 20px;
+    text-align: center;
+}
+
+
+/* back tap text */
+a.back {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+/* back tap container*/
+div.tap {
+
+    background-color: lightblue;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* home page top*/
+div.flex-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+}
+
+/* small image*/
+img.simg {
+    width: 345.6px;
+    height: 460.8px;
+    margin: 10px
+}
+
+/* intro page*/
+div.intro {
+    padding: 10px;
+    border: 5px dotted pink;
+    margin: 10px
+}
+
+/* flexible box*/
+div.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+/* bookmark calendar*/
+div.calendar {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 280px;
+    height: 240px;
+    padding: 10px;
+    border: solid yellowgreen;
+    margin: 10px;
+}
+
+/* bookmark month*/
+a.month {
+    display: flex;
+    width: 80px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: rgb(100, 212, 100);
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/* bookmark month*/
+div.week {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: 5px;
+    margin-bottom: 0px;
+}
+
+/* book mark days*/
+a.markdate {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: rgb(100, 212, 100);
+    border-radius: 100%;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/* not writing bolg*/
+a.mark0 {
+    background-color: gray;
+    color: black;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    border-top: solid;
+    padding: 5px 0px 10px 0px;
+
+}
+
+/* article column */
+article {
+    margin: 10px 30px;
+}
+
+/* fbi box*/
+section {
+    margin: 20px 0px;
+    border-bottom: solid;
+    padding: 5px 15px;
+
+}
+
+/* time tag */
+time {
+    text-align: left;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+/* rmove the page margin */
+body {
+    margin: 0px;
+}

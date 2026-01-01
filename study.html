@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <style>
+        /* 你的博客原有样式 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* --- 元旦动画样式 --- */
+        #newYearAnimation {
+            position: fixed;
+            bottom: -100px;
+            /* 初始位置在屏幕下方 */
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            color: #d63384;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(255, 154, 158, 0.5);
+            z-index: 9999;
+            /* 确保在最顶层显示 */
+            transition: bottom 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+            /* 平滑的滑入动画 */
+            animation: glow 2s infinite alternate;
+            /* 添加呼吸灯效果 */
+            pointer-events: none;
+            /* 让鼠标事件穿透，不影响下方内容点击 */
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 15px rgba(255, 154, 158, 0.5), 0 0 25px rgba(255, 154, 158, 0.3);
+            }
+
+            to {
+                box-shadow: 0 0 25px rgba(255, 154, 158, 0.8), 0 0 40px rgba(255, 154, 158, 0.5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- 元旦动画的 HTML 结构 -->
+    <div id="newYearAnimation">
+        <span>🎉 新年快乐！🎊</span>
+    </div>
+
+    <script>
+        // --- 元旦动画的 JavaScript 逻辑 ---
+        document.addEventListener('DOMContentLoaded', function () {
+            const today = new Date();
+            const month = today.getMonth() + 1; // getMonth() 返回 0-11，所以要+1
+            const day = today.getDate();
+
+            // 检查是否是1月1日
+            if (month === 1 && day === 1) {
+                const animation = document.getElementById('newYearAnimation');
+
+                // 动画出现
+                setTimeout(() => {
+                    animation.style.bottom = '50px'; // 从底部滑入
+                }, 1000); // 延迟1秒出现，避免突兀
+
+                // 动画消失
+                setTimeout(() => {
+                    animation.style.bottom = '-100px'; // 滑回底部消失
+                }, 8000); // 总共显示约8秒
+            }
+        });
+    </script>
+
+</body>
+
+</html>
